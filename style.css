@@ -1,0 +1,124 @@
+body {
+    background-color: #000000;
+    font-family: "Ubuntu mono";
+    padding: 0 0.5em;
+    transition: 1s;
+}
+.navy {
+    background-color: #252932 !important;
+    transition: 1s;
+}
+
+#text-container1, #text-container3 {
+    opacity: 0;
+    transition: 1s;
+}
+#text-container1.visible, #text-container3.visible {
+    opacity: 100 !important;
+    transition: 2s;
+}
+
+.text-white, p {
+    color: rgb(247, 233, 233);
+}
+span {
+    font-size: 16px;
+}
+span.para {
+    line-height: 25px;
+}
+.border {
+    border: solid 1px white;
+}
+.container {
+    margin: auto;
+    max-width: 20em;
+    margin-top: 4em;
+    /* border: solid 1px white; */
+}
+.box1 {
+    margin: auto;
+    margin-bottom: 1.5em;
+    max-width: 18em;
+    background-color: #1d2128;
+    padding: 15px;
+    border-radius: 10px;
+    min-height: 7em;
+    border: solid 2px #2a2e38;
+    animation: expand 2s ease;
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
+}
+.typed-cursor {
+    color: orangered;
+}
+
+#element {
+    transition: 1s;
+    opacity: 0;
+}
+#element.visible {
+    opacity: 100;
+    transition: 1s;
+}
+
+#btngroup1 {
+    display: none;
+    margin: 0 auto;
+    width: fit-content;
+    opacity: 0;
+    transition: 1s;
+}
+#btngroup1.visible {
+    opacity: 100;
+    transition: 2s;
+}
+
+#btngroup2 {
+    display: none;
+    transition: 1s;
+    opacity: 0;
+}
+#btngroup2.visible {
+    opacity: 100;
+    transition: 2s;
+}
+
+.btn {
+    font-size: 15px;
+    font-family: 'Quicksand';
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 5px;
+}
+.btn.btn-primary {
+    color: white;
+    background-color: rgb(68, 83, 116);
+}
+.btn.btn-primary:hover {
+    background-color: #2e3b55;
+}
+
+.btn.btn-secondary {
+    color: white;
+    background-color: rgba(95, 95, 95, 0.658);
+}
+
+@keyframes expand {
+    0% {
+        width: 0px;
+        transform: scaleX(0);
+        transform: scaleY(0);
+    }
+    50% {
+        width: 0px;
+        transform: scaleX(1);
+        transform: scaleY(1);
+    }
+    100% {
+        width: 18em;
+        transform: scaleX(1);
+        transform: scaleY(1);
+    }
+}
