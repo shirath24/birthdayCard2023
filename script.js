@@ -1,8 +1,8 @@
 var typing1 = new Typed('#element', {
     strings: [
       '^4000Hi,^1000 this is a message for my beloved girl.^1000',
-      // 'My beloved girl just turns 22 today!^1000',
-      // "Yes, she's my girlfriend^1000, and she have to read it wholeheartedly cuz she deserves it ❤^1000",
+      'My beloved girl just turns 22 today!^1000',
+      "Yes, she's my girlfriend^1000, and she have to read it wholeheartedly cuz she deserves it ❤^1000",
       'But first,^1500 are you my girl?'],
     typeSpeed: 50,
     backSpeed: 30,
