@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Ubuntu mono';
+    src: url(UbuntuMono-Regular.ttf) format(ttf);
+}
+
 body {
     background-color: #000000;
     font-family: "Ubuntu mono", monospace;
