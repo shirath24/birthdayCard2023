@@ -3,14 +3,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=UbuntuMono" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!-- jsDelivr  -->
+    <script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.x/dist/index.umd.js"></script>
+    <!-- UNPKG -->
+    <script src="https://unpkg.com/fireworks-js@2.x/dist/index.umd.js"></script>
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
 <body id="body">
+    <span id="firework" class="fwcontainer fireworks"></span>
+    <audio id="music" controls>
+        <source src="music2.mp3" type="audio/mp3">
+    </audio>
 
     <div class="container">
         <div class="box1">
@@ -29,6 +34,16 @@
                 
                 </span>                
             </div>
+            <div id="text-container4">
+                <span id="element4" class="para text-white visible">
+                
+                </span>                
+            </div>
+            <div id="text-container5">
+                <span id="element5" class="para text-white visible">
+                
+                </span>                
+            </div>
         </div>
     
         <div id="btngroup1">
@@ -37,9 +52,18 @@
         </div>
         <div id="btngroup2">
             <button id="btn3" class="btn btn-primary">Kopi Nako</button>
-            <button class="btn btn-primary">December Coffee</button>
+            <button id="btn4" class="btn btn-primary">December Coffee</button>
             <button id="btn5" class="btn btn-primary">Taichan sambas</button>
             <button id="btn6" class="btn btn-primary">Lippo Puri</button>
+        </div>
+        <div id="btngroup4">
+            <button id="btn7" class="btn btn-primary">Little Sunflower</button>
+            <button id="btn8" class="btn btn-primary">Tulip</button>
+            <button id="btn9" class="btn btn-primary">Daisy</button>
+            <button id="btn10" class="btn btn-primary">Sunflower</button>
+        </div>
+        <div id="btngroup3">
+            <button id="music-btn" class="btn btn-primary"><i class="bi bi-play-fill"></i></button>
         </div>
     </div>
     
