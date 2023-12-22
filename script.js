@@ -1,10 +1,3 @@
-// Clear all caches
-caches.keys().then(function(cacheNames) {
-  cacheNames.forEach(function(cacheName) {
-      caches.delete(cacheName);
-  });
-});
-
 var typing1 = new Typed('#element', {
     strings: [
       '^4000Hi,^1000 this is a message for my beloved girl.^1000',
