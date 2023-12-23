@@ -13,7 +13,7 @@
 
 body {
     background-color: #000000;
-    font-family: "Ubuntu mono";
+    font-family: "Ubuntu mono", monospace;
     padding: 0 0.5em;
     transition: 1s;
     overflow: hidden;
