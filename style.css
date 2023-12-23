@@ -6,23 +6,28 @@
     font-family: Quicksand;
     src: url(Quicksand-Regular.ttf) format(ttf);
 }
+@font-face {
+    font-family: 'Caveat';
+    src: url(Caveat-Regular.ttf) format(ttf);
+}
 
 body {
     background-color: #000000;
-    font-family: "Ubuntu mono", monospace;
+    font-family: "Ubuntu mono";
     padding: 0 0.5em;
     transition: 1s;
+    overflow: hidden;
 }
 .navy {
-    background-color: #252932 !important;
+    background-color: #252932;
     transition: 1s;
 }
 
-#text-container1, #text-container3, #text-container4 {
+#text-container1, #text-container3, #text-container4,  #text-container5, #text-container6{
     opacity: 0;
     transition: 1s;
 }
-#text-container1.visible, #text-container3.visible, #text-container4.visible {
+#text-container1.visible, #text-container3.visible, #text-container4.visible, #text-container5.visible, #text-container6.visible {
     opacity: 100 !important;
     transition: 2s;
 }
@@ -35,6 +40,12 @@ span {
 }
 span.para {
     line-height: 25px;
+}
+span.para.text-white.change {
+    font-family: "Caveat";
+    font-size: 20px;
+    color: #412c00;
+    transition: 3s;
 }
 .border {
     border: solid 1px white;
@@ -53,11 +64,19 @@ span.para {
     padding: 15px;
     border-radius: 10px;
     min-height: 7em;
+    max-height: 20em;
+    overflow: hidden;
     border: solid 2px #2a2e38;
     animation: expand 2s ease;
     animation-delay: 1s;
     animation-fill-mode: backwards;
 }
+.box1.change {
+    background-color: #ffe9bc55;
+    border: solid 2px rgb(255, 250, 224);
+    transition: 3s;
+}
+
 .typed-cursor {
     color: orangered;
 }
@@ -131,6 +150,121 @@ span.para {
 #music-btn {
     font-size: 18px;
     padding: 10px;
+}
+
+div.box2 {
+    border: solid 2px white;
+    height: 20em;
+    overflow: hidden;
+}
+
+#text-container6.animation {
+    animation: scrolling 165s linear forwards;
+}
+
+#bg-2 {
+    position: fixed;
+    z-index: -3;
+    right: 50%;
+    transform: translate(50%, 0em);
+    opacity: 100;
+    transition: 6s ease-out;
+}
+#bg-2.before {
+    transform: translate(50%, 75em);
+    opacity: 0;
+    transition: 5s;
+}
+#sky {
+    position: fixed;
+    width: 95em;
+    right: 50%;
+    transform: translate(50%, -25em);
+    /* visibility: hidden; */
+}
+#sea {
+    position: fixed;
+    height: 33em;
+    right: 50%;
+    transform: translate(50%, 24em);
+    transition: 7s ease-out;
+    /* visibility: hidden; */
+}
+#sea.before {
+    transform: translate(50%, 26.6em);
+}
+#cloud {
+    position: fixed;
+    right: 50%;
+    height: 23em;
+    transform: translate(49%, 2.5em);
+    transition: 7s ease-out;
+    animation: cloudwave 20s linear infinite;
+}
+#cloud.before {
+    transform: translate(49%, 7em);
+}
+#sun {
+    position: fixed;
+    right: 50%;
+    transform: translate(50%, 13em);
+    transition: 8s ease-out;
+    animation: sunwave 8s infinite;
+}
+#sun.before {
+    transform: translate(50%, 20em);    
+}
+#clouds {
+    position: fixed;
+    right: 50%;
+    height: 20em;
+    transform: translate(50%, 4em);
+    animation: waving 5s ease infinite;
+}
+
+@keyframes cloudwave {
+    0% {
+        transform: translate(49%, 2.5em);
+    }
+    50% {
+        transform: translate(51%, 2.5em);
+    }
+    100% {
+        transform: translate(49%, 2.5em);
+    }
+}
+
+@keyframes sunwave {
+    0% {
+        transform: translate(50%, 13em);
+    }
+    50% {
+        transform: translate(50%, 13.5em);
+    }
+    100% {
+        transform: translate(50%, 13em);
+    }
+}
+
+@keyframes waving {
+    0% {
+        transform: translate(49%, 4em);
+    }
+    50% {
+        transform: translate(50%, 4em);
+    }
+    100% {
+        transform: translate(49%, 4em);
+    }
+}
+
+@keyframes scrolling {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-53em);
+    }
 }
 
 @keyframes expand {
