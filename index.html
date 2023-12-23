@@ -3,8 +3,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<!--     <script src="cacheDump.js"></script> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
     <!-- jsDelivr  -->
     <script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.x/dist/index.umd.js"></script>
     <!-- UNPKG -->
@@ -13,13 +15,21 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
 <body id="body">
+    <div id="bg-2" class="before">
+        <img id="sky" src="sky.png" alt="">
+        <img id="sea" class="before" src="sea.png" alt="">
+        <img id="cloud" class="before" src="cloud.png" alt="">
+        <img id="sun" class="before" src="sun.png" alt="">
+        <img id="clouds" src="clouds.png" alt="">
+    </div>
+
     <span id="firework" class="fwcontainer fireworks"></span>
     <audio id="music" controls>
         <source src="music2.mp3" type="audio/mp3">
     </audio>
 
     <div class="container">
-        <div class="box1">
+        <div class="box1" id="box1">
             <div id="text-container1">
                 <span id="element" class="para text-white visible">
                 
@@ -42,6 +52,11 @@
             </div>
             <div id="text-container5">
                 <span id="element5" class="para text-white visible">
+                
+                </span>                
+            </div>
+            <div id="text-container6">
+                <span id="element6" class="para text-white visible">
                 
                 </span>                
             </div>
