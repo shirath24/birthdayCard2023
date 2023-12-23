@@ -1,7 +1,7 @@
 var typing1 = new Typed('#element', {
     strings: [
       '^4000Hi,^1000 this is a message for my beloved girl.^1000',
-      'This pretty girl just turned 22 today!^2500',
+      'This pretty girl just turned 23 today!^2500',
       "^500I made this as a little gift for her,^1000<br>but not just that, I also wanna express my feelings and my thoughts about her",
       "You must read it wholeheartedly cuz she deserves it ❤^1000",
       'But first,^1500 are you my girl?'],
@@ -88,6 +88,19 @@ function typing5() {
   })
 };
 
+function typing6() {
+  new Typed('#element6', {
+    strings: [
+      "^1000It goes like this,^1000<br> I don\'t know where to start,^500<br> or where to end,^500<br> because honestly I cannot describe how really proud and grateful I am to met a girl like her.^500<br> <br> It started with an unplanned meeting.<br> I was never expecting to be with her, but god plans are the best.^500<br> when I\'m not looking for love and planned to focus on myself first, all of a sudden, her shine hits me.^500<br><br> It felt like a sunrise after dawn,^500 she came and light up my world,^600 not a bright one,^500 but more like a warm and full of loving sunrays fell over my face,^500 it gives me a peace of mind and heart.^1000 my eyes closed,^500 I cannot hold my smile,^500 and stretched out my hands,^500 as if her warmth embraced me.^1000<br> I suddenly wanna shout^500 \"please, take me\"^500,<br> And I think to myself,^500 \"how can I miss this precious once in a lifetime oppportunity?\".^1000<br> So I was determined to follow it, ^500I\'m gonna walk to the end of the cape,^500 I\'m gonna sail to the end of the ocean,^500 just to catch her warmth forever,^500 because I don\'t want it to end.^1000<br> <br> She is a very kind human being,^500 she\'s very sincere,^500 she loved her family,^500 she truly appreciates the meaning of love,^500 she's a hardworker,^500 she's smart even though most of the time she's slow 😂 but it doesn't matter,^500 she's humble,^500 she dressed well,^500 she has pretty eyes,^500 pretty face,^500 very positive vibes,^500 she's loyal,^500 Oh, I could go on and on all day..^500 but the point is,^500 she's perfect for me,^1000 I love her very very much,^1000 once again happy birthday to my girl!,^500 I hope you're always in a good health,^500 be a better person,^500 always happy,^500 be stronger,^500 always love your fams, me, and your friends!✨🎉",
+      ],
+    typeSpeed: 70,
+    backSpeed: 20,
+    onComplete: (self) => {
+      
+    },
+  })
+};
+
 setTimeout(function () {
   document.getElementById('body').classList.toggle('navy');
 }, 500);
@@ -96,10 +109,49 @@ setTimeout(function(){
   document.getElementById('text-container1').classList.toggle('visible');
 }, 3500);
 
+
+
 document.getElementById('music-btn').addEventListener('click', function() {
   document.getElementById('music').play();
   document.getElementById('music').volume = 0.5;
-
+  document.getElementById('btngroup3').classList.toggle('visible');
+  setTimeout(function() {
+    document.getElementById('btngroup3').style.display = 'none';
+  }, 1100);
+  setTimeout(function() {
+    document.getElementById('text-container3').classList.toggle('visible');
+  }, 1500);
+  setTimeout(function() {
+    document.getElementById('text-container3').style.display = 'none';
+  }, 2500);
+  setTimeout(function() {
+    document.getElementById('text-container5').classList.toggle('visible');
+  }, 1500);
+  setTimeout(function() {
+    document.getElementById('text-container5').style.display = 'none';
+  }, 2500);
+  setTimeout(function() {
+    document.getElementById('text-container6').style.display = 'block';
+  }, 2600);
+  setTimeout(function () {
+    typing6();
+  }, 2600);
+  setTimeout(function() {
+    document.getElementById('text-container6').classList.toggle('visible');
+  }, 2700);
+  setTimeout(function() {
+    document.getElementById('text-container6').classList.toggle('animation');
+  }, 12000);
+  setTimeout(function () {
+    document.getElementById('bg-2').classList.toggle('before');
+    document.getElementById('sea').classList.toggle('before');
+    document.getElementById('cloud').classList.toggle('before');
+    document.getElementById('sun').classList.toggle('before');
+  }, 45000);
+  setTimeout(function(){
+    document.getElementById('box1').classList.toggle('change');
+    document.getElementById('element6').classList.toggle('change');
+  }, 47000);
 });
 
 const container = document.querySelector('.fireworks');
@@ -187,4 +239,5 @@ document.getElementById('btn10').addEventListener('click', typetrigger3);
 // document.getElementById('btn1').addEventListener('click', function() {
 //   document.getElementById('body').classList.toggle('navy');
 // });
+
 
