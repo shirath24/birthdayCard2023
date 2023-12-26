@@ -1,14 +1,14 @@
 @font-face {
     font-family: 'Ubuntu mono';
-    src: url(UbuntuMono-Regular.ttf) format(ttf);
+    src: url(UbuntuMono-Regular.ttf);
 }
 @font-face {
     font-family: 'Quicksand';
-    src: url(Quicksand-Regular.ttf) format(ttf);
+    src: url(Quicksand-Regular.ttf);
 }
 @font-face {
     font-family: 'Caveat';
-    src: url(Caveat-Regular.ttf) format(ttf);
+    src: url(Caveat-Regular.ttf);
 }
 
 body {
